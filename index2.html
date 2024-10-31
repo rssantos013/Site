@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Plataforma de hacks atualizados diariamente para facilitar as tarefas nas plataformas do CMSP" />
+    <meta name="keywords"
+        content="hacks CMSP, hacks plataformas CMSP, hacks Khan Academy, hacks Alura, hacks MeSalva, Novo Ensino Médio, ferramentas CMSP, educação CMSP" />
+    <title>RaphaelCheat's DLC</title>
+    <link rel="icon" href="https://i.imgur.com/YJk8r8E.png" />
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" as="style" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: "Roboto", sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+            user-select: none;
+            position: relative;
+            overflow-x: hidden;
+            scrollbar-width: thin;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #1e1e1e;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #ffffff;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #3658b5;
+        }
+
+        .container {
+            max-width: 600px;
+            padding: 30px;
+            background-color: #1e1e1e;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin-bottom: 80px;
+            width: 100%;
+            min-height: 150px;
+        }
+
+        h1 {
+            color: #e0e0e0;
+            margin-bottom: 20px;
+            animation: fadeIn 1s;
+            display: inline-block;
+        }
+
+        h1 span {
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 4px solid #e0e0e0;
+        }
+
+        h2,
+        h3 {
+            color: #e0e0e0;
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: #b0b0b0;
+            margin-bottom: 30px;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .button-row {
+            display: flex;
+            justify-content: center;
+            flex-wrap: nowrap;
+            margin: 5px 0;
+        }
+
+        .button {
+            background-color: #4169e1;
+            color: white;
+            padding: 15px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+            display: inline-flex;
+            align-items: center;
+            flex: 0 0 auto;
+            max-width: 150px;
+        }
+
+        .button:hover {
+            background-color: #3658b5;
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            transition: all 0.4s ease-in-out;
+        }
+
+        .button i {
+            margin-right: 8px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .footer-text {
+            color: #b0b0b0;
+            margin-top: 15px;
+            font-size: 15px;
+            line-height: 1.5;
+        }
+
+        .footer-text strong {
+            color: #ff6f61;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+
+            .button {
+                padding: 12px 15px;
+                font-size: 14px;
+            }
+        }
+
+        footer {
+            background-color: #1e1e1e;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+        }
+
+        footer .credits {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+
+        footer .credits div {
+            text-align: center;
+        }
+
+        footer .credits img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            transition: transform 0.3s ease;
+        }
+
+        footer .credits img:hover {
+            transform: scale(1.1);
+        }
+
+        footer p {
+            margin-top: 10px;
+            color: #999;
+        }
+
+        hr {
+            border: 1px solid #b0b0b0;
+            margin: 20px 0;
+        }
+
+        .view-count {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #2a2a2a;
+            border-radius: 8px;
+            color: #ffffff;
+            font-size: 18px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .view-count i {
+            margin-right: 8px;
+        }
+
+        #statusButton {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #4169e1;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        #statusButton:hover {
+            background-color: #3658b5;
+        }
+
+        #statusPopup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #1e1e1e;
+            border: 2px solid #808080;
+            border-radius: 10px;
+            padding: 20px;
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        #statusPopup h2 {
+            margin: 0;
+            color: #e0e0e0;
+        }
+
+        #statusPopup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #2a2a2a;
+            border: 2px solid #808080;
+            border-radius: 10px;
+            padding: 30px;
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            transition: all 0.3s ease;
+            opacity: 0;
+        }
+
+        #statusPopup.show {
+            display: block;
+            opacity: 1;
+        }
+
+        .status-list {
+            margin-top: 10px;
+            text-align: left;
+        }
+
+        #closePopup {
+            background-color: #ff6f61;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 5px 10px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+
+        #closePopup:hover {
+            background-color: #e0554a;
+        }
+
+        #overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 999;
+        }
+    </style>
+</head>
+
+<body>
+    <p></p>
+    <div class="container">
+        <div class="content">
+            <h1 id="title"><span></span></h1>
+            <hr />
+            <div class="button-container">
+                <div class="button-row">
+                    <button id="cmspButton" class="button" aria-label="CMSP">
+                        <i class="fas fa-school" aria-hidden="true"></i> CMSP
+                    </button>
+                    <button id="khanButton" class="button" aria-label="Khan Academy">
+                        <i class="fas fa-graduation-cap" aria-hidden="true"></i> Khan
+                    </button>
+                    <button id="speakButton" class="button" aria-label="SPeak">
+                        <i class="fas fa-comments" aria-hidden="true"></i> SPeak
+                    </button>
+                </div>
+                <div class="button-row">
+                    <button id="aluraButton" class="button" aria-label="Alura">
+                        <i class="fas fa-laptop-code" aria-hidden="true"></i> Alura
+                    </button>
+                    <button id="mesalvaButton" class="button" aria-label="MeSalva">
+                        <i class="fas fa-receipt" aria-hidden="true"></i> MeSalva
+                    </button>
+                </div>
+            </div>
+            <hr />
+                </h1>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <button id="statusButton">Status</button>
+    <div id="overlay"></div>
+    <div id="statusPopup">
+        <h2>Status Scripts</h2>
+        <p>🟢 = Online<br />🔴 = Offline</p>
+        <div class="status-list">
+            <p>
+                <i class="fas fa-circle" style="color: red"></i> CMSP<br /><i class="fas fa-circle"
+                    style="color: green"></i>
+                Khan<br /><i class="fas fa-circle" style="color: red"></i>
+                SPeak<br /><i class="fas fa-circle" style="color: green"></i>
+                Alura<br /><i class="fas fa-circle" style="color: green"></i> MeSalva
+            </p>
+        </div>
+        <button id="closePopup">Fechar</button>
+    </div>
+
+    <script>
+        const statusButton = document.getElementById("statusButton");
+        const statusPopup = document.getElementById("statusPopup");
+        const overlay = document.getElementById("overlay");
+        const closePopup = document.getElementById("closePopup");
+
+        statusButton.addEventListener("click", () => {
+            statusPopup.classList.add("show");
+            overlay.style.display = "block";
+        });
+
+        closePopup.addEventListener("click", () => {
+            statusPopup.classList.remove("show");
+            overlay.style.display = "none";
+        });
+
+        overlay.addEventListener("click", () => {
+            statusPopup.classList.remove("show");
+            overlay.style.display = "none";
+        });
+
+        $(document).ready(function () {
+            $.ajax({
+                method: "GET",
+                url: "https://api.counterapi.dev/v1/DarkMode/DarkMode/up",
+                contentType: "application/json",
+                success: function (result) {
+                    if (result && result.count !== undefined) {
+                        $("#viewCount").text(result.count);
+                    }
+                },
+                error: function () {
+                    $("#viewCount").text("Erro ao carregar");
+                },
+            });
+        });
+
+        const title = "Raphael Cheat's";
+        const titleElement = document
+            .getElementById("title")
+            .querySelector("span");
+        let index = 1;
+        let isDeleting = false;
+
+        function type() {
+            const currentText = title.slice(0, index);
+            titleElement.textContent = currentText;
+
+            if (isDeleting) {
+                index--;
+                if (index < 0) {
+                    isDeleting = false;
+                    index = 0;
+                    setTimeout(type, 8);
+                } else {
+                    setTimeout(type, 8);
+                }
+            } else {
+                index++;
+                if (index > title.length) {
+                    isDeleting = false;
+                    setTimeout(type, 1);
+                } else {
+                    setTimeout(type, 1);
+                }
+            }
+        }
+
+        type();
+
+        document.addEventListener("contextmenu", (e) => {
+            e.preventDefault();
+        });
+
+        async function copyToClipboard(url) {
+            try {
+                const response = await fetch(url);
+                if (!response.ok) throw new Error("Erro ao buscar o script");
+                const code = await response.text();
+                await navigator.clipboard.writeText(code);
+                alert("Script copiado com sucesso!");
+            } catch (error) {
+                alert("Script Indisponivel. Tente novamente mais tarde.");
+            }
+        }
+
+        document
+            .getElementById("cmspButton")
+            .addEventListener("click", () => {
+                copyToClipboard("https://"); 
+                //window.open("https://cmspcheeto.squareweb.app/", "_blank");
+        });
+
+        document
+            .getElementById("khanButton")
+            .addEventListener("click", async () => {
+                await copyToClipboard("https://raw.githubusercontent.com/rssantos013/KhanAcademy.Hack/refs/heads/main/Khanhack.js");
+                window.open("https://github.com/rssantos013/KhanAcademy.Hack", "_blank");
+            });
+
+        document
+            .getElementById("speakButton")
+            .addEventListener("click", async () => {
+                await copyToClipboard("https://");
+                //window.open("https://github.com/rssantos013/KhanAcademy.Hack", "_blank");
+            });
+
+        document
+            .getElementById("aluraButton")
+            .addEventListener("click", async () => {
+                await copyToClipboard("https://raw.githubusercontent.com/rssantos013/KhanAcademy.Hack/refs/heads/main/alura.js");
+                window.open("https://github.com/rssantos013/KhanAcademy.Hack", "_blank");
+            });
+
+        document
+            .getElementById("mesalvaButton")
+            .addEventListener("click", async () => {
+                await copyToClipboard("https://raw.githubusercontent.com/rssantos013/KhanAcademy.Hack/refs/heads/main/mesalva.js");
+                window.open("https://github.com/rssantos013/KhanAcademy.Hack", "_blank");
+            });
+
+            document
+            .getElementById("creditosButton")
+            .addEventListener("click", async () => {
+                window.open("https://www.instagram.com/r.ssantos013/", "_blank");
+            });
+    </script>
+
+    <footer>
+        <div class="credits">
+        </div>
+    </footer>
+</body>
+
+</html>
