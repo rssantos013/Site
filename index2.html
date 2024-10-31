@@ -232,6 +232,20 @@
             transition: background-color 0.3s;
         }
 
+        #inicioButton {
+            position: absolute;
+            top: 20px;
+            right: 1420px;
+            background-color: #4169e1;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
         #statusButton:hover {
             background-color: #3658b5;
         }
@@ -308,7 +322,6 @@
         }
     </style>
 </head>
-
 <body>
     <p></p>
     <div class="container">
@@ -333,6 +346,9 @@
                     </button>
                     <button id="mesalvaButton" class="button" aria-label="MeSalva">
                         <i class="fas fa-receipt" aria-hidden="true"></i> MeSalva
+                    </button>
+                    <button id="inicioButton" class="button" aria-label="Inicio">
+                        <i class="fas fa-receipt" aria-hidden="true"></i> Inicio
                     </button>
                 </div>
             </div>
@@ -482,9 +498,9 @@
             });
 
             document
-            .getElementById("creditosButton")
+            .getElementById("inicioButton")
             .addEventListener("click", async () => {
-                window.open("https://www.instagram.com/r.ssantos013/", "_blank");
+                window.location.href = "index.html"
             });
     </script>
 
