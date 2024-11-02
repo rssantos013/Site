@@ -1,4 +1,3 @@
 rewriteEngine On
 
-RewriteRule index index.html [NC]
-RewriteRule scripts scripts.html [NC]
+RewriteRule index scripts index.html scripts.html [NC]
