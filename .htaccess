@@ -1,3 +1,0 @@
-rewriteEngine On
-
-RewriteRule index scripts index.html scripts.html [NC]
