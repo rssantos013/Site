@@ -1,3 +1,0 @@
-rewriteCond %{THE_REQUEST} ^[A-Z]
-{3,}\s([^.]+)\.html [NC]
-RewriteRule ^ %1 [R,NC]
