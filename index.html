@@ -94,12 +94,11 @@
               </div>
               <div class="p-6 pt-0">
                 <p>Os Scripts é constantemente atualizado, sempre explorando e utilizando as últimas vulnerabilidades e explorações descobertas.</p>
-                
               </div>
             </div>
           </div>
           <div class="mt-16 text-center">
-            <a href="scripts.html" type="button" id="bookmarklet" class="ring-offset-background focus-visible:ring-ring inline-flex items-center justify-center whitespace-nowrap rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 border text-xl p-6" data-button-root="">
+            <a href="scripts" type="button" id="bookmarklet" class="ring-offset-background focus-visible:ring-ring inline-flex items-center justify-center whitespace-nowrap rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 border text-xl p-6" data-button-root="">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon lucide lucide-download mr-2 h-6 w-6">
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                 <polyline points="7 10 12 15 17 10"></polyline>
@@ -108,7 +107,32 @@
           </div>
         </div>
       </div>
-    </div>
+
+<!-- Bloco de Card -->
+<div data-v-2c52338b="" class="card" id="donation-card">
+  <button data-v-2c52338b="" class="close-button" id="close-button">
+      <img data-v-2c52338b="" src="close.svg" alt="close">
+  </button>
+  <div class="card-body" data-v-2c52338b="">
+      <h3 class="card-title" data-v-2c52338b="">
+          Ajude o <br data-v-2c52338b="">
+          <a class="text-2xl font-bold text-primary mr-5" data-v-2c52338b="">
+              Raphael<span class="peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-1xl md:text-1xl lg:text-1xl font-extrabold gradient-text leading-[1.2] pb-6">Cheat's</span>
+          </a>
+      </h3>
+      <p class="card-text" data-v-2c52338b="">Sua doação mantém nossa plataforma online e em funcionamento.</p>
+      <p class="card-text" data-v-2c52338b="">Ajude o CMSP Hacks a continuar online doando qualquer valor a partir de 1 real!</p>
+      <a href="https://pixgg.com/raphaelcheats" class="donate-button" target="_blank" data-v-2c52338b="">Doar</a>
+  </div>
+</div>
+
+<script>
+  document.getElementById('close-button').addEventListener('click', function() {
+      document.getElementById('donation-card').style.display = 'none';
+  });
+</script>
+
+
   <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"8db0973e9d215221","version":"2024.10.4","r":1,"token":"7a8d9be1f01a4700b6a039f43c53d372","serverTiming":{"name":{"cfExtPri":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}}}' crossorigin="anonymous"></script>
 </body>
 </html>
